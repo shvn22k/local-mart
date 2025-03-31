@@ -56,35 +56,29 @@ export default function LandingPage() {
       {/* Hero Section */}
       <section id="hero" className="min-h-screen flex items-center">
         <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 sm:pt-32 pb-16">
-          <div className="text-center space-y-6 sm:space-y-8">
-            <div className="animate-float">
-              <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight">
-                <span className="text-primary-green block sm:inline">Groceries,</span>
-                <span className="text-accent-green block sm:inline"> Snacks & More</span>
-              </h2>
-            </div>
-            
-            <p className="mt-4 sm:mt-6 text-lg sm:text-xl md:text-2xl text-primary-green font-medium max-w-2xl mx-auto px-4">
-              at your doorstep
+          <div className="text-center">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+              Groceries, Snacks and More!
+            </h1>
+            <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+              All at your doorstep.
             </p>
-            
-            <p className="text-base sm:text-lg text-accent-green italic max-w-xl mx-auto px-4">
-              empowering locals thru locals
+            <p>
+            ‎ 
             </p>
-            
-            {/* Call to Action */}
-            <div className="mt-8 sm:mt-10 px-4">
-              <Link
-                to="/explore"
-                className="inline-flex items-center px-6 py-3 border border-transparent text-base sm:text-lg font-medium rounded-lg text-white bg-primary-green hover:bg-accent-green transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all w-full sm:w-auto justify-center"
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="/login?type=customer"
+                className="px-8 py-3 bg-primary-green text-white rounded-md font-medium hover:bg-primary-green/90 transition-colors duration-300"
               >
-                Explore Local Stores
-              </Link>
-            </div>
-            
-            {/* Decorative Elements */}
-            <div className="mt-12 sm:mt-16 flex justify-center space-x-6">
-              <span className="text-2xl sm:text-3xl text-accent-green animate-float opacity-75">✱</span>
+                Become a Customer
+              </a>
+              <a
+                href="/login?type=shop"
+                className="px-8 py-3 bg-white text-primary-green rounded-md font-medium hover:bg-gray-100 transition-colors duration-300"
+              >
+                Expand Your Business
+              </a>
             </div>
           </div>
 
